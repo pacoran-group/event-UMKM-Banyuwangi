@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Proposal kerja sama sponsor dan partner UMKM Banyuwangi Festival by Ashika Group, 30 Oktober – 1 November 2026 di Wisata Pancoran Waterpark.">
+<title>UMKM Banyuwangi Festival</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap">
+<style>
+html{scroll-behavior:smooth}body{margin:0}img{max-width:100%}
+/* Layout: proposal panjang satu kolom (maks 72rem), sampul ilustrasi Kawah Ijen, bagian bernomor sesuai struktur proposal B2B. */
+:root{
+  --paper:#fbfaf7; --surface:#ffffff; --ink:#2a2633; --muted:#6a6474; --line:#ebe7ee; color-scheme:light;
+  --osing:#c0392b; --osing-soft:#fcefed; --gold:#b9852a; --sky:#eaf5fb; --sand:#fdf4e6; --ijen-glow:#5cc8e6;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65}
+.wrap{max-width:72rem;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.6rem,3.2vw,2.2rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:600}
+p{margin:0;max-width:65ch}
+a{color:var(--osing)}
+.eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--osing)}
+.muted{color:var(--muted)}
+
+/* Cover */
+.cover{background:linear-gradient(160deg,var(--sky),var(--sand));color:var(--ink);position:relative;overflow:hidden}
+.cover-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding-block:clamp(2.5rem,6vw,4.5rem)}
+.cover .eyebrow{color:var(--osing)}
+.cover h1{font-size:clamp(2.4rem,6.4vw,4.6rem);font-weight:800;letter-spacing:-.02em;margin-block:.6rem .4rem}
+.cover h1 span{display:block;font-size:.42em;font-weight:600;color:var(--gold);letter-spacing:0;margin-top:.5rem}
+.tagline{font-size:1.15rem;font-style:italic;color:#2b7f99;margin-bottom:1.6rem}
+.cover dl{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.2rem;margin:0;font-size:.95rem}
+.cover dt{color:var(--muted);font-weight:500}
+.cover dd{margin:0;font-weight:700}
+.cover svg{width:100%;height:auto;border-radius:14px}
+.motif-band{height:28px;background:var(--osing-soft)}
+.motif-band svg{display:block;width:100%;height:28px}
+
+/* Nav */
+nav.toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:.25rem;overflow-x:auto;padding-block:.5rem;scrollbar-width:thin}
+nav.toc a{flex:none;font-size:.82rem;font-weight:500;color:var(--muted);text-decoration:none;padding:.3rem .65rem;border-radius:999px}
+nav.toc a:hover,nav.toc a:focus-visible{background:var(--osing-soft);color:var(--ink);outline:none}
+
+/* Sections */
+section.blk{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1.5rem;padding-block:3rem;border-bottom:1px solid var(--line)}
+.num{font-family:var(--display);font-weight:800;font-size:2.4rem;color:var(--osing);line-height:1;font-variant-numeric:tabular-nums}
+.content{display:grid;gap:1.1rem;min-width:0}
+ul.clean{margin:0;padding-left:1.15rem;display:grid;gap:.4rem;max-width:68ch}
+ul.clean li::marker{color:var(--gold)}
+ol.steps{margin:0;padding-left:1.3rem;display:grid;gap:.4rem}
+.lead{font-size:1.12rem;font-weight:500}
+
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{text-align:left;vertical-align:top;padding:.7rem .9rem;border-bottom:1px solid var(--line)}
+th{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;background:var(--paper)}
+tr:last-child td{border-bottom:0}
+td.num-cell,th.num-cell{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.total td{font-weight:700;background:var(--osing-soft)}
+
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.zone{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;display:grid;gap:.4rem;align-content:start}
+.zone .tag{font-size:.75rem;font-weight:700;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+
+/* Packages */
+.pkg th{background:var(--surface)}
+.pkg th.platinum{color:var(--osing)}
+.pkg td:first-child{font-weight:600;white-space:nowrap}
+.pkg tr.price td{font-family:var(--display);font-weight:800;font-size:1.05rem;font-variant-numeric:tabular-nums}
+
+/* Timeline */
+.tl{display:grid;gap:.55rem;min-width:40rem}
+.tl-row{display:grid;grid-template-columns:13rem 1fr;align-items:center;gap:1rem;font-size:.92rem}
+.tl-track{position:relative;height:26px;border-bottom:1px dashed var(--line)}
+.tl-bar{position:absolute;top:5px;height:16px;border-radius:8px;background:var(--ijen-glow);opacity:.85}
+.tl-dot{position:absolute;top:4px;width:18px;height:18px;transform:translateX(-50%) rotate(45deg);background:var(--muted);border-radius:3px}
+.tl-row.key .tl-dot{background:var(--osing)}
+.tl-row.key{font-weight:700}
+.tl-row.event .tl-bar{background:var(--gold)}
+.tl-date{position:absolute;top:3px;font-size:.78rem;color:var(--muted);white-space:nowrap}
+.tl-axis{display:grid;grid-template-columns:13rem 1fr;gap:1rem;font-size:.75rem;color:var(--muted)}
+.tl-axis div:last-child{position:relative;height:1.2rem}
+.tl-axis span{position:absolute;transform:translateX(-50%)}
+
+/* Gallery */
+figure{margin:0;display:grid;gap:.5rem}
+figure svg{width:100%;height:auto;border-radius:12px;display:block}
+figcaption{font-size:.85rem;color:var(--muted)}
+figcaption b{color:var(--ink)}
+.event-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:grid}
+.event-card svg{width:100%;height:auto;display:block}
+.event-body{padding:1.2rem 1.3rem 1.4rem;display:grid;gap:.6rem}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:.25rem 1rem;font-size:.9rem;margin:0}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;font-weight:600}
+
+/* CTA + contact */
+.cta{background:var(--osing);color:#fff;border-radius:16px;padding:clamp(1.4rem,4vw,2.4rem);display:grid;gap:1rem}
+.cta h3{font-size:1.5rem}
+.cta ol{margin:0;padding-left:1.3rem;display:grid;gap:.35rem}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.5rem;display:grid;gap:1rem;max-width:40rem}
+.contact .name{font-family:var(--display);font-size:1.6rem;font-weight:800}
+.c-row{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;justify-content:space-between;border-top:1px solid var(--line);padding-top:.9rem}
+.c-row .label{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;width:100%}
+.c-row .val{font-size:1.1rem;font-weight:700;user-select:all;font-variant-numeric:tabular-nums;word-break:break-all}
+button.copy{font:inherit;font-size:.85rem;font-weight:700;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:.35rem .9rem;cursor:pointer}
+button.copy:hover{border-color:var(--osing)}
+button.copy:focus-visible{outline:2px solid var(--osing);outline-offset:2px}
+
+.closing{background:linear-gradient(160deg,var(--sand),var(--sky));color:var(--ink);padding-block:3.5rem}
+.closing .wrap{display:grid;gap:1rem}
+.closing h2{color:var(--ink)}
+.closing p{color:var(--muted)}
+.sign{font-family:var(--display);font-weight:800;font-size:1.4rem;color:var(--osing)}
+.note{font-size:.82rem;color:var(--muted);font-style:italic}
+
+@media (max-width:820px){
+  .cover-inner{grid-template-columns:1fr}
+  section.blk{grid-template-columns:1fr;gap:.6rem;padding-block:2.2rem}
+  .num{font-size:1.8rem}
+  .grid-2,.grid-4{grid-template-columns:1fr}
+}
+@media (min-width:821px) and (max-width:1060px){.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:no-preference){.flame{animation:flick 2.6s ease-in-out infinite alternate}.flame.b{animation-delay:-1.1s}}
+@keyframes flick{from{opacity:.65}to{opacity:1}}
+</style>
+</head>
+<body>
+
+
+<header class="cover">
+  <div class="wrap cover-inner">
+    <div>
+      <div class="eyebrow">Proposal Kerja Sama Partner &amp; Sponsor</div>
+      <h1>UMKM Banyuwangi Festival<span>by Ashika Group</span></h1>
+      <p class="tagline">“Dari Banyuwangi, Naik Kelas Bersama”</p>
+      <dl>
+        <dt>Tanggal</dt><dd>Jumat–Minggu, 30 Oktober – 1 November 2026</dd>
+        <dt>Venue</dt><dd>Wisata Pancoran Waterpark, Rogojampi, Banyuwangi</dd>
+        <dt>Penyelenggara</dt><dd>Ashika Group × Pancoran Group</dd>
+        <dt>Tiket masuk</dt><dd>Gratis untuk pengunjung</dd>
+      </dl>
+    </div>
+    <!-- Ilustrasi: Kawah Ijen dengan api biru -->
+    <svg viewBox="0 0 480 360" role="img" aria-label="Ilustrasi Kawah Ijen dengan api biru di malam hari">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe3f2"/><stop offset="1" stop-color="#fdf1e0"/></linearGradient>
+        <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5fd9d0"/><stop offset="1" stop-color="#1f8f9a"/></linearGradient>
+        <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#47c8ff" stop-opacity=".55"/><stop offset="1" stop-color="#47c8ff" stop-opacity="0"/></radialGradient>
+      </defs>
+      <rect width="480" height="360" fill="url(#sky)"/>
+      <g fill="#ffffff"><circle cx="40" cy="40" r="1.4"/><circle cx="110" cy="70" r="1"/><circle cx="170" cy="30" r="1.6"/><circle cx="250" cy="55" r="1"/><circle cx="330" cy="28" r="1.3"/><circle cx="400" cy="62" r="1"/><circle cx="450" cy="24" r="1.5"/><circle cx="300" cy="95" r="1"/><circle cx="70" cy="110" r="1.1"/></g>
+      <circle cx="395" cy="70" r="26" fill="#ffd98a"/>
+      <path d="M0 200 L90 120 L150 150 L220 95 L300 140 L370 110 L480 190 L480 360 L0 360Z" fill="#a69fc0"/>
+      <path d="M0 230 L80 170 L170 200 L240 160 L330 195 L420 165 L480 210 L480 360 L0 360Z" fill="#8d86a8"/>
+      <ellipse cx="250" cy="275" rx="150" ry="34" fill="url(#lake)"/>
+      <path d="M0 300 Q120 255 250 300 T480 290 L480 360 L0 360Z" fill="#6f6889"/>
+      <ellipse cx="120" cy="262" rx="70" ry="40" fill="url(#glow)"/>
+      <g fill="#4cc9ff"><path class="flame" d="M105 262 C95 240 112 228 108 210 C124 226 128 244 120 262Z"/><path class="flame b" d="M122 262 C116 246 128 238 126 224 C138 238 140 252 134 262Z" fill="#9be7ff"/><path class="flame b" d="M92 264 C86 252 94 246 92 236 C102 246 104 256 100 264Z"/></g>
+      <path d="M150 248 C170 230 160 210 185 195 C182 215 200 225 190 248Z" fill="#e8e0c8" opacity=".25"/>
+      <g fill="#f0c66e"><rect x="320" y="282" width="3" height="16"/><circle cx="321.5" cy="279" r="3"/><rect x="338" y="286" width="3" height="13"/><circle cx="339.5" cy="283" r="3"/></g>
+    </svg>
+  </div>
+  <div class="motif-band" aria-hidden="true">
+    <svg viewBox="0 0 120 28" preserveAspectRatio="xMinYMid slice"><defs><pattern id="oling" width="40" height="28" patternUnits="userSpaceOnUse"><path d="M6 22 C6 8 26 4 28 14 C30 22 18 24 18 17 C18 12 25 12 25 16" fill="none" stroke="#d39a3a" stroke-width="2.2" stroke-linecap="round"/><circle cx="34" cy="8" r="2" fill="#c0392b"/></pattern></defs><rect width="2000" height="28" fill="url(#oling)"/></svg>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Daftar isi">
+  <div class="wrap">
+    <a href="#ringkasan">Ringkasan</a><a href="#penyelenggara">Penyelenggara</a><a href="#latar">Latar Belakang</a><a href="#konsep">Konsep</a><a href="#detail">Detail</a><a href="#rundown">Rundown</a><a href="#audiens">Audiens</a><a href="#exposure">Exposure</a><a href="#kerjasama">Kerja Sama</a><a href="#benefit">Benefit</a><a href="#paket">Paket</a><a href="#aktivasi">Aktivasi</a><a href="#media">Media</a><a href="#timeline">Timeline</a><a href="#budget">Budget</a><a href="#dokumentasi">Dokumentasi</a><a href="#kontak">Kontak</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section class="blk" id="ringkasan">
+  <div class="num">02</div>
+  <div class="content">
+    <div class="eyebrow">Executive Summary</div>
+    <h2>Festival tiga hari yang sepenuhnya didedikasikan untuk UMKM Banyuwangi</h2>
+    <p class="lead">UMKM Banyuwangi Festival adalah festival UMKM, kuliner, dan budaya Osing yang mempertemukan pelaku usaha lokal dengan keluarga, komunitas, buyer, dan brand partner.</p>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><th scope="row">Apa</th><td>Pameran UMKM, bazar kuliner, panggung hiburan dan showcase, lomba pelajar, Zumba Splash Color, serta business matching.</td></tr>
+        <tr><th scope="row">Kapan</th><td>Jumat–Minggu, 30 Oktober – 1 November 2026.</td></tr>
+        <tr><th scope="row">Di mana</th><td>Wisata Pancoran Waterpark, Rogojampi. Sekitar 25–30 menit dari pusat kota dan dekat Bandara Banyuwangi.</td></tr>
+        <tr><th scope="row">Target peserta</th><td>UMKM kuliner, fesyen dan batik, kriya, kopi, serta produk olahan Banyuwangi. Pengunjungnya keluarga, pelajar, komunitas, dan wisatawan.</td></tr>
+        <tr><th scope="row">Tujuan</th><td>Menaikkan omzet UMKM selama event, membuka akses ke buyer, retail, dan korporasi, serta memberi brand partner ruang untuk bertemu pengunjung secara langsung.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Pengunjung masuk kawasan <b>gratis</b>, sehingga arus pengunjung langsung menjadi peluang bagi tenant dan partner.</p>
+  </div>
+</section>
+
+<section class="blk" id="penyelenggara">
+  <div class="num">03</div>
+  <div class="content">
+    <div class="eyebrow">Tentang Penyelenggara</div>
+    <h2>Ashika Group bersama Pancoran Group, pengelola venue selama lebih dari 20 tahun</h2>
+    <div class="grid-2">
+      <div class="zone">
+        <span class="tag">Penyelenggara festival</span>
+        <h3>Ashika Group</h3>
+        <p>Ashika Group menginisiasi UMKM Banyuwangi Festival sebagai ruang tumbuh bagi pelaku usaha lokal. Festival ini digarap bersama Pancoran Group sebagai pengelola venue.</p>
+      </div>
+      <div class="zone">
+        <span class="tag">Pengelola venue</span>
+        <h3>Pancoran Group / Wisata Pancoran Waterpark</h3>
+        <ul class="clean">
+          <li>Dipimpin Haliyatul Istiqomah. Berdiri lebih dari 20 tahun di Kecamatan Rogojampi.</li>
+          <li>Destinasi keluarga dengan konsep <i>One Stop Family Adventure</i>: 8 wahana air utama, termasuk kolam ombak, kolam arus, kolam busa, dan Water Slide Extreme setinggi 17 meter.</li>
+          <li>Danau buatan dengan perahu wisata dan ikon Pulau Bidadari.</li>
+          <li>Terhubung dengan jalur utama Banyuwangi dan dekat akses bandara.</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Mengapa bermitra dengan kami</h3>
+    <div class="grid-4">
+      <div class="zone"><span class="tag">Pengalaman</span><h3>Penyelenggara event keluarga</h3><p>Lomba Mewarnai Pelajar se-Banyuwangi dan Zumba Splash Color sudah kami gelar. Format keduanya kembali hadir di festival ini.</p></div>
+      <div class="zone"><span class="tag">Venue siap pakai</span><h3>Infrastruktur 20 tahun</h3><p>Kawasan rekreasi yang sudah beroperasi lebih dari 20 tahun, lengkap dengan fasilitas dan tim operasional untuk pengunjung keluarga.</p></div>
+      <div class="zone"><span class="tag">Audiens bawaan</span><h3>Destinasi keluarga</h3><p>Pengunjung reguler waterpark ditambah peserta lomba dan komunitas yang datang bersama keluarga.</p></div>
+      <div class="zone"><span class="tag">Akses</span><h3>Lokasi strategis</h3><p>Di jalur utama Rogojampi, 25–30 menit dari pusat kota dan dekat Bandara Banyuwangi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="latar">
+  <div class="num">04</div>
+  <div class="content">
+    <div class="eyebrow">Latar Belakang</div>
+    <h2>UMKM Banyuwangi layak punya panggung sendiri</h2>
+    <p>UMKM Banyuwangi punya produk yang kuat, tetapi jarang mendapat panggung sendiri. Festival ini dibuat agar UMKM lokal menjadi bintang utama, bukan pelengkap acara lain.</p>
+    <ul class="clean">
+      <li><b>Banyuwangi sudah dikenal sebagai percontohan</b> integrasi budaya Osing, pariwisata, dan ekonomi kreatif.</li>
+      <li><b>UMKM lokal butuh akses pasar, bukan hanya lapak.</b> Banyak pelaku usaha unggul di produk tetapi masih terbatas di branding, kemasan, perizinan, dan jaringan buyer.</li>
+      <li><b>Event publik terbukti mendongkrak transaksi.</b> Soekarno Run BWX 2026, misalnya, melibatkan 300 UMKM Banyuwangi.</li>
+      <li><b>Brand mencari ruang yang autentik</b> untuk bertemu keluarga dan komunitas Banyuwangi secara langsung, di luar iklan digital.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="blk" id="konsep">
+  <div class="num">05</div>
+  <div class="content">
+    <div class="eyebrow">Konsep &amp; Tema</div>
+    <h2>“Rasa, Karya, dan Budaya Banyuwangi Naik Kelas”</h2>
+    <p>Konsepnya festival kampung UMKM di dalam kawasan waterpark, terbagi dalam empat zona. Pengunjung datang untuk hiburan dan budaya, lalu pulang membawa produk, pengalaman, dan kenangan Banyuwangi.</p>
+    <div class="grid-4">
+      <div class="zone"><span class="tag">Zona 1</span><h3>Rasa Blambangan</h3><p>Rujak soto, pecel pitik, sego tempong, dan kopi Banyuwangi.</p><p class="muted">Food tasting, kopi cupping</p></div>
+      <div class="zone"><span class="tag">Zona 2</span><h3>Karya Osing</h3><p>Batik Gajah Oling, tenun, kriya bambu, dan aksesori.</p><p class="muted">Demo membatik, workshop singkat</p></div>
+      <div class="zone"><span class="tag">Zona 3</span><h3>Panggung UMKM</h3><p>Product showcase, talkshow, dan pitching.</p><p class="muted">Hiburan, kuis berhadiah dari partner</p></div>
+      <div class="zone"><span class="tag">Zona 4</span><h3>Business Corner</h3><p>Business matching, klinik legalitas dan kemasan, digital marketing.</p><p class="muted">Konsultasi untuk pelaku usaha</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="detail">
+  <div class="num">06</div>
+  <div class="content">
+    <div class="eyebrow">Detail Event</div>
+    <h2>Tiga hari di Pancoran Waterpark, gratis untuk pengunjung</h2>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><th scope="row">Nama</th><td>UMKM Banyuwangi Festival by Ashika Group</td></tr>
+        <tr><th scope="row">Tanggal</th><td>30 Oktober – 1 November 2026 (3 hari)</td></tr>
+        <tr><th scope="row">Jam operasional</th><td>09.00–22.00 WIB</td></tr>
+        <tr><th scope="row">Lokasi</th><td>Wisata Pancoran Waterpark, Rogojampi, Banyuwangi</td></tr>
+        <tr><th scope="row">Tiket masuk</th><td>Gratis</td></tr>
+        <tr><th scope="row">Jumlah booth</th><td>Target 30–40 booth UMKM + booth partner</td></tr>
+        <tr><th scope="row">Target pengunjung</th><td>5.000–10.000 orang per hari</td></tr>
+        <tr><th scope="row">Target tenant</th><td>UMKM kuliner, fesyen, kriya, kopi, dan produk olahan asal Banyuwangi</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="blk" id="rundown">
+  <div class="num">07</div>
+  <div class="content">
+    <div class="eyebrow">Rundown / Program Acara</div>
+    <h2>Tiga hari program, siang untuk UMKM dan keluarga, malam untuk hiburan</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Hari</th><th>Siang (09.00–17.00)</th><th>Malam (18.00–22.00)</th></tr></thead>
+      <tbody>
+        <tr><td><b>Jumat</b><br>30 Okt</td><td>Opening ceremony dan tari Gandrung; pembukaan pameran dan bazar UMKM; showcase batik dan fesyen Banyuwangi; talkshow “UMKM Banyuwangi Go Nasional”</td><td>Pentas seni budaya Osing; hiburan musik band lokal; kuis berhadiah dari partner</td></tr>
+        <tr><td><b>Sabtu</b><br>31 Okt</td><td>Lomba Mewarnai Pelajar se-Banyuwangi (TK, PAUD, SD); kids &amp; family corner; demo membatik dan workshop kriya; business matching UMKM dengan buyer dan retail; klinik legalitas dan kemasan</td><td>Pengumuman pemenang lomba mewarnai; live cooking menu khas Banyuwangi; hiburan musik</td></tr>
+        <tr><td><b>Minggu</b><br>1 Nov</td><td>Zumba Splash Color; bazar kuliner pagi; flash sale UMKM</td><td>Awarding UMKM terfavorit dan best booth; hiburan musik penutupan</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Jam detail tiap sesi akan dibagikan saat technical meeting.</p>
+  </div>
+</section>
+
+<section class="blk" id="audiens">
+  <div class="num">08</div>
+  <div class="content">
+    <div class="eyebrow">Target Audience</div>
+    <h2>Keluarga Banyuwangi, pelajar, dan komunitas</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Segmen</th><th>Usia</th><th>Asal wilayah</th><th>Alasan datang</th></tr></thead>
+      <tbody>
+        <tr><td>Keluarga muda dengan anak</td><td>25–45 th + anak</td><td>Banyuwangi, Jember, Situbondo</td><td>Masuk gratis, lomba anak, waterpark</td></tr>
+        <tr><td>Pelajar TK–SMA/SMK dan guru</td><td>4–18 th</td><td>Se-Kabupaten Banyuwangi</td><td>Lomba Mewarnai Pelajar se-Banyuwangi</td></tr>
+        <tr><td>Komunitas senam dan olahraga</td><td>15–45 th</td><td>Banyuwangi dan sekitarnya</td><td>Zumba Splash Color</td></tr>
+        <tr><td>Pecinta kuliner dan kopi</td><td>17–45 th</td><td>Banyuwangi dan sekitarnya</td><td>Bazar kuliner, live cooking, hiburan malam</td></tr>
+        <tr><td>Pelaku UMKM, buyer, instansi</td><td>Dewasa</td><td>Jawa Timur</td><td>Pameran, business matching, klinik UMKM</td></tr>
+        <tr><td>Wisatawan</td><td>Semua usia</td><td>Luar daerah dan mancanegara</td><td>Budaya Osing, oleh-oleh khas Banyuwangi</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="blk" id="exposure">
+  <div class="num">09</div>
+  <div class="content">
+    <div class="eyebrow">Potensi &amp; Exposure</div>
+    <h2>Pengunjung keluarga ditambah kanal promosi penyelenggara</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Kanal</th><th>Target</th><th>Catatan</th></tr></thead>
+      <tbody>
+        <tr><td>Traffic pengunjung</td><td>15.000–30.000 orang selama 3 hari</td><td>Tiket gratis, lomba pelajar, Zumba Splash Color, hiburan malam</td></tr>
+        <tr><td>Social media reach</td><td>300.000–500.000 akun</td><td>Instagram dan TikTok Pancoran Waterpark, Ashika Group, kolaborasi tenant</td></tr>
+        <tr><td>Media coverage</td><td>10+ media lokal/regional</td><td>Rilis pers dan undangan liputan ke media online, radio, dan TV lokal</td></tr>
+        <tr><td>Sekolah dan komunitas</td><td>Sekolah TK–SD se-Banyuwangi, komunitas senam</td><td>Undangan langsung untuk lomba dan Zumba</td></tr>
+        <tr><td>KOL / influencer</td><td>5–10 kreator lokal Banyuwangi</td><td>Food vlogger, kreator keluarga dan wisata</td></tr>
+        <tr><td>Database</td><td>Peserta Zumba, sekolah peserta lomba, tenant, buyer</td><td>Untuk follow-up partner sesuai izin peserta</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Angka di atas adalah target dan akan diperbarui setelah event berjalan.</p>
+  </div>
+</section>
+
+<section class="blk" id="kerjasama">
+  <div class="num">10</div>
+  <div class="content">
+    <div class="eyebrow">Bentuk Kerja Sama</div>
+    <h2>Tujuh cara bergabung, dari dana sampai barter</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Bentuk</th><th>Cocok untuk</th><th>Gambaran</th></tr></thead>
+      <tbody>
+        <tr><td>Sponsorship (dana)</td><td>Bank, BUMN, telco, FMCG, otomotif</td><td>Paket Platinum, Gold, dan Silver dengan benefit bertingkat</td></tr>
+        <tr><td>Tenant / booth</td><td>UMKM, brand lokal, F&amp;B</td><td>Sewa booth di area pameran UMKM Banyuwangi</td></tr>
+        <tr><td>Brand activation</td><td>Brand consumer</td><td>Booth interaktif, sampling, games, demo produk</td></tr>
+        <tr><td>Strategic partnership</td><td>Bank, fintech, marketplace, ekspedisi</td><td>Program untuk UMKM: QRIS, pembiayaan, onboarding toko online, ongkir</td></tr>
+        <tr><td>Supporting partner</td><td>Hotel, media, komunitas, kampus</td><td>Dukungan non-dana atau publikasi</td></tr>
+        <tr><td>Barter (in-kind)</td><td>Air minum, sound/lighting, percetakan, hadiah</td><td>Produk atau jasa senilai paket, ditukar benefit</td></tr>
+        <tr><td>Media partner</td><td>Media online, radio, TV lokal</td><td>Liputan dan publikasi ditukar logo dan mention</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="blk" id="benefit">
+  <div class="num">11</div>
+  <div class="content">
+    <div class="eyebrow">Benefit untuk Partner</div>
+    <h2>Brand Anda hadir di panggung, di venue, dan di layar ponsel pengunjung</h2>
+    <ul class="clean">
+      <li><b>Logo placement</b>: backdrop panggung, gate masuk festival, banner, poster, sertifikat tenant, ID card panitia.</li>
+      <li><b>Booth</b>: lokasi premium di jalur utama pengunjung, ukuran sesuai paket.</li>
+      <li><b>Mention MC</b>: penyebutan brand di panggung festival sepanjang acara.</li>
+      <li><b>Social media exposure</b>: feed, reels/TikTok, dan story di akun Pancoran Waterpark dan Ashika Group.</li>
+      <li><b>Branding venue</b>: umbul-umbul, flag chain, signage area kuliner, wahana, atau titik foto.</li>
+      <li><b>Sampling dan selling</b>: izin membagikan sampel dan menjual produk di area festival.</li>
+      <li><b>Panggung dan sesi</b>: slot talkshow, demo produk, atau kuis berhadiah.</li>
+      <li><b>Program UMKM</b>: kesempatan menjadi mitra resmi UMKM Banyuwangi untuk pembiayaan, pembayaran digital, atau ekspedisi.</li>
+      <li><b>Laporan</b>: post-event report berisi dokumentasi, jumlah pengunjung, dan engagement.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="blk" id="paket">
+  <div class="num">12</div>
+  <div class="content">
+    <div class="eyebrow">Paket Kerja Sama</div>
+    <h2>Empat paket sponsor, satu slot Platinum eksklusif</h2>
+    <div class="table-wrap pkg"><table>
+      <thead><tr><th>Benefit</th><th class="platinum">Platinum</th><th>Gold</th><th>Silver</th><th>Supporting</th></tr></thead>
+      <tbody>
+        <tr class="price"><td>Nilai</td><td>Rp50.000.000</td><td>Rp25.000.000</td><td>Rp10.000.000</td><td>Rp3.000.000 / barter</td></tr>
+        <tr><td>Slot</td><td>1 (eksklusif kategori)</td><td>3</td><td>5</td><td>Tidak terbatas</td></tr>
+        <tr><td>Naming</td><td>“UMKM Banyuwangi Festival presented by [Brand]”</td><td>–</td><td>–</td><td>–</td></tr>
+        <tr><td>Logo di materi</td><td>Paling besar, posisi utama</td><td>Besar</td><td>Sedang</td><td>Kecil</td></tr>
+        <tr><td>Booth</td><td>3×6 m, lokasi premium</td><td>3×3 m, jalur utama</td><td>3×3 m</td><td>–</td></tr>
+        <tr><td>Mention MC</td><td>Setiap sesi, 3 hari</td><td>2× per hari</td><td>1× per hari</td><td>Saat penutupan</td></tr>
+        <tr><td>Slot panggung</td><td>2 sesi talkshow/demo</td><td>1 sesi</td><td>Kuis 1×</td><td>–</td></tr>
+        <tr><td>Konten sosmed</td><td>3 feed + 3 reels/TikTok + story</td><td>2 feed + 1 reels + story</td><td>1 feed + story</td><td>Logo di poster kolektif</td></tr>
+        <tr><td>Branding venue</td><td>Gate festival + titik foto + umbul-umbul</td><td>Umbul-umbul + 1 signage</td><td>Umbul-umbul</td><td>–</td></tr>
+        <tr><td>Sampling &amp; selling</td><td>Ya</td><td>Ya</td><td>Ya</td><td>–</td></tr>
+        <tr><td>Post-event report</td><td>Lengkap + database</td><td>Lengkap</td><td>Ringkas</td><td>Ringkas</td></tr>
+      </tbody>
+    </table></div>
+    <p><b>Booth tenant UMKM:</b> Rp750.000 per booth 3×3 m untuk 3 hari, termasuk meja, kursi, listrik 450 W, dan fascia nama. Kuota prioritas untuk UMKM asal Banyuwangi.</p>
+  </div>
+</section>
+
+<section class="blk" id="aktivasi">
+  <div class="num">13</div>
+  <div class="content">
+    <div class="eyebrow">Aktivasi Brand</div>
+    <h2>Delapan ide agar brand hadir langsung di tengah pengunjung</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Ide aktivasi</th><th>Cocok untuk</th><th>Cara kerja</th></tr></thead>
+      <tbody>
+        <tr><td>Kupon belanja UMKM</td><td>Bank, e-wallet, fintech</td><td>Pengunjung buka rekening atau bayar dengan QRIS, lalu dapat voucher belanja di booth UMKM</td></tr>
+        <tr><td>Stamp rally “Jelajah UMKM”</td><td>Semua brand</td><td>Kumpulkan stempel dari 5 booth, tukar hadiah di booth partner</td></tr>
+        <tr><td>Zumba refreshment station</td><td>Minuman, FMCG</td><td>Water/isotonic station dan sampling seusai Zumba Splash Color</td></tr>
+        <tr><td>Kids creative corner</td><td>Susu, snack, alat tulis</td><td>Area mewarnai bermerek saat Lomba Mewarnai Pelajar se-Banyuwangi</td></tr>
+        <tr><td>Photo spot budaya Osing</td><td>Telco, otomotif, kosmetik</td><td>Instalasi Gajah Oling atau Pulau Bidadari dengan logo dan hashtag</td></tr>
+        <tr><td>Live cooking &amp; tasting</td><td>Bumbu, minyak, peralatan dapur</td><td>Demo masak menu khas Banyuwangi di panggung UMKM</td></tr>
+        <tr><td>Klinik UMKM</td><td>Bank, marketplace, ekspedisi</td><td>Konsultasi pembiayaan, buka toko online, tarif khusus kirim</td></tr>
+        <tr><td>Zero Sampah drop point</td><td>Air minum, consumer goods</td><td>Tukar sampah botol dengan merchandise agar area festival tetap bersih</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="blk" id="media">
+  <div class="num">14</div>
+  <div class="content">
+    <div class="eyebrow">Media &amp; Marketing Plan</div>
+    <h2>Promosi dimulai 12 Oktober, iklan berbayar 20 Oktober</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Kanal</th><th>Aktivitas</th><th>Waktu</th></tr></thead>
+      <tbody>
+        <tr><td>Instagram</td><td>Teaser, pengumuman tenant dan partner, carousel menu UMKM, countdown, live report</td><td>Mulai 12 Okt, harian saat event</td></tr>
+        <tr><td>TikTok</td><td>Video “kenalan sama UMKM”, behind the scene, highlight harian</td><td>Mulai 12 Okt</td></tr>
+        <tr><td>Meta Ads</td><td>Iklan bertarget Banyuwangi, Jember, Situbondo, usia 18–45</td><td>20 Okt – 1 Nov</td></tr>
+        <tr><td>KOL / influencer</td><td>5–10 kreator lokal: food vlogger, keluarga, wisata</td><td>Pre-event visit + liputan hari H</td></tr>
+        <tr><td>Banner &amp; poster</td><td>Baliho jalan utama, poster di sekolah, desa, dan pusat keramaian</td><td>Terpasang paling lambat 20 Okt</td></tr>
+        <tr><td>Media partner</td><td>Rilis pers ke media lokal/regional dan radio lokal</td><td>H-14, H-3, H+1</td></tr>
+        <tr><td>Komunitas</td><td>Komunitas lari, UMKM, kopi, pelajar, pokdarwis desa</td><td>Mulai 12 Okt</td></tr>
+        <tr><td>Kanal tenant</td><td>Setiap UMKM mengunggah poster kolektif dan menandai partner</td><td>Mulai 20 Okt</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="blk" id="timeline">
+  <div class="num">15</div>
+  <div class="content">
+    <div class="eyebrow">Timeline Persiapan</div>
+    <h2>Konfirmasi partner paling lambat 17 Oktober 2026</h2>
+    <p>Konfirmasi pada 17 Oktober memberi waktu agar logo masuk produksi materi mulai 20 Oktober.</p>
+    <div class="table-wrap" style="padding:1rem 1.2rem">
+      <div class="tl" id="tl"></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="budget">
+  <div class="num">16</div>
+  <div class="content">
+    <div class="eyebrow">Estimasi Budget</div>
+    <h2>Sekitar Rp151,25 juta untuk festival selama 3 hari</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Pos biaya</th><th class="num-cell">Estimasi (Rp)</th></tr></thead>
+      <tbody>
+        <tr><td>Booth dan tenda UMKM (±35 booth)</td><td class="num-cell">35.000.000</td></tr>
+        <tr><td>Panggung UMKM, sound, dan lighting (3 hari)</td><td class="num-cell">25.000.000</td></tr>
+        <tr><td>Operasional: panitia, konsumsi, keamanan, kebersihan</td><td class="num-cell">15.000.000</td></tr>
+        <tr><td>Dekorasi festival dan branding venue</td><td class="num-cell">15.000.000</td></tr>
+        <tr><td>Promosi digital dan Meta Ads</td><td class="num-cell">10.000.000</td></tr>
+        <tr><td>MC, pengisi acara, narasumber talkshow</td><td class="num-cell">10.000.000</td></tr>
+        <tr><td>KOL / influencer</td><td class="num-cell">7.500.000</td></tr>
+        <tr><td>Cetak: baliho, poster, banner, ID card</td><td class="num-cell">7.500.000</td></tr>
+        <tr><td>Dokumentasi foto dan video</td><td class="num-cell">7.500.000</td></tr>
+        <tr><td>Hadiah dan awarding UMKM</td><td class="num-cell">5.000.000</td></tr>
+        <tr><td>Kontingensi 10%</td><td class="num-cell">13.750.000</td></tr>
+        <tr class="total"><td>Total</td><td class="num-cell">151.250.000</td></tr>
+      </tbody>
+    </table></div>
+    <p><b>Sumber dana:</b> sponsorship (1 Platinum + 3 Gold + 5 Silver = Rp175 juta bila terjual penuh), sewa booth tenant, dan dukungan barter.</p>
+  </div>
+</section>
+
+<section class="blk" id="dokumentasi">
+  <div class="num">17</div>
+  <div class="content">
+    <div class="eyebrow">Dokumentasi / Previous Event</div>
+    <h2>Event yang pernah kami gelar</h2>
+    <div class="grid-2">
+      <article class="event-card">
+        <!-- Ilustrasi: lomba mewarnai -->
+        <svg viewBox="0 0 480 260" role="img" aria-label="Ilustrasi lomba mewarnai pelajar">
+          <rect width="480" height="260" fill="#fbe9c8"/>
+          <rect x="70" y="40" width="210" height="170" rx="6" fill="#ffffff" stroke="#d9c6a0" stroke-width="2" transform="rotate(-4 175 125)"/>
+          <g transform="rotate(-4 175 125)">
+            <path d="M110 170 C110 120 160 90 200 110 C230 125 220 165 190 165 C170 165 168 140 185 138" fill="none" stroke="#3a3550" stroke-width="3" stroke-linecap="round"/>
+            <path d="M120 175 L240 175" stroke="#3a3550" stroke-width="2"/>
+            <path d="M118 170 C120 135 155 108 190 118 C200 122 205 130 205 140" fill="#a5161c" opacity=".35"/>
+            <circle cx="235" cy="80" r="18" fill="#f2b33d" opacity=".7"/>
+            <path d="M95 75 Q120 55 145 75" stroke="#3fa7d6" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"/>
+          </g>
+          <g transform="translate(300 60) rotate(28)"><rect width="16" height="120" rx="3" fill="#a5161c"/><path d="M0 120 L8 140 L16 120Z" fill="#a5161c"/><rect y="12" width="16" height="10" fill="#7a0f13"/></g>
+          <g transform="translate(340 50) rotate(18)"><rect width="16" height="120" rx="3" fill="#f2b33d"/><path d="M0 120 L8 140 L16 120Z" fill="#f2b33d"/><rect y="12" width="16" height="10" fill="#c58a17"/></g>
+          <g transform="translate(380 45) rotate(8)"><rect width="16" height="120" rx="3" fill="#3fa7d6"/><path d="M0 120 L8 140 L16 120Z" fill="#3fa7d6"/><rect y="12" width="16" height="10" fill="#22789f"/></g>
+          <g transform="translate(418 48) rotate(-4)"><rect width="16" height="120" rx="3" fill="#4caf6a"/><path d="M0 120 L8 140 L16 120Z" fill="#4caf6a"/><rect y="12" width="16" height="10" fill="#2f7f47"/></g>
+        </svg>
+        <div class="event-body">
+          <h3>Lomba Mewarnai Pelajar se-Banyuwangi</h3>
+          <p>Kompetisi mewarnai untuk pelajar TK, PAUD, dan SD se-Kabupaten Banyuwangi. Anak-anak berkarya bersama keluarga dan guru, sehingga acara ramai pengunjung keluarga sejak pagi.</p>
+          <dl class="facts">
+            <dt>Peserta</dt><dd>Pelajar TK, PAUD, SD se-Banyuwangi</dd>
+            <dt>Audiens</dt><dd>Keluarga, guru, sekolah</dd>
+            <dt>Peluang partner</dt><dd>Kids corner, sampling susu/snack, hadiah lomba</dd>
+          </dl>
+        </div>
+      </article>
+      <article class="event-card">
+        <!-- Ilustrasi: zumba splash color -->
+        <svg viewBox="0 0 480 260" role="img" aria-label="Ilustrasi Zumba Splash Color dengan percikan warna">
+          <rect width="480" height="260" fill="#e8f3fa"/>
+          <circle cx="90" cy="70" r="48" fill="#e5575a" opacity=".8"/>
+          <circle cx="380" cy="60" r="56" fill="#f2b33d" opacity=".75"/>
+          <circle cx="250" cy="40" r="34" fill="#3fc6e8" opacity=".8"/>
+          <circle cx="420" cy="170" r="36" fill="#b05ad6" opacity=".7"/>
+          <circle cx="60" cy="190" r="30" fill="#4caf6a" opacity=".75"/>
+          <g fill="#2a2633" opacity=".9"><circle cx="150" cy="40" r="6"/><circle cx="320" cy="110" r="5"/><circle cx="200" cy="120" r="4"/><circle cx="440" cy="110" r="5"/><circle cx="30" cy="120" r="4"/></g>
+          <g fill="#2a2633">
+            <circle cx="170" cy="120" r="13"/><path d="M162 135 L178 135 L186 190 L154 190Z"/><path d="M160 140 L128 108" stroke="#2a2633" stroke-width="7" stroke-linecap="round"/><path d="M180 140 L208 160" stroke="#2a2633" stroke-width="7" stroke-linecap="round"/><path d="M160 190 L148 238" stroke="#2a2633" stroke-width="8" stroke-linecap="round"/><path d="M180 190 L198 236" stroke="#2a2633" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="300" cy="118" r="13"/><path d="M292 133 L308 133 L316 188 L284 188Z"/><path d="M308 138 L340 106" stroke="#2a2633" stroke-width="7" stroke-linecap="round"/><path d="M292 138 L262 156" stroke="#2a2633" stroke-width="7" stroke-linecap="round"/><path d="M292 188 L276 234" stroke="#2a2633" stroke-width="8" stroke-linecap="round"/><path d="M308 188 L318 236" stroke="#2a2633" stroke-width="8" stroke-linecap="round"/>
+          </g>
+          <g fill="#e5575a"><circle cx="128" cy="104" r="7"/></g><g fill="#3fc6e8"><circle cx="342" cy="102" r="7"/></g>
+        </svg>
+        <div class="event-body">
+          <h3>Zumba Splash Color</h3>
+          <p>Zumba massal yang dipadukan dengan lempar bubuk warna. Peserta datang bersama komunitas senam dan teman, menghasilkan banyak konten foto dan video yang dibagikan di media sosial.</p>
+          <dl class="facts">
+            <dt>Peserta</dt><dd>Komunitas senam, remaja, keluarga</dd>
+            <dt>Audiens</dt><dd>Usia 15–45 tahun, aktif di media sosial</dd>
+            <dt>Peluang partner</dt><dd>Refreshment station, jersey bermerek, photo booth</dd>
+          </dl>
+        </div>
+      </article>
+    </div>
+
+    <h3>Wajah Banyuwangi yang akan dibawa ke festival</h3>
+    <div class="grid-4">
+      <figure>
+        <svg viewBox="0 0 300 220" role="img" aria-label="Ilustrasi penari Gandrung Banyuwangi">
+          <rect width="300" height="220" fill="#a5161c"/>
+          <circle cx="150" cy="120" r="92" fill="#c33a2c"/>
+          <g fill="#f0c66e"><path d="M150 52 L118 30 L126 26 L150 46 L174 26 L182 30Z"/><path d="M126 46 C130 24 170 24 174 46 C162 36 138 36 126 46Z"/><circle cx="150" cy="24" r="5"/><circle cx="128" cy="30" r="3.5"/><circle cx="172" cy="30" r="3.5"/></g>
+          <circle cx="150" cy="60" r="13" fill="#2b1a1a"/>
+          <path d="M140 74 L160 74 L166 110 L134 110Z" fill="#1d1a24"/>
+          <path d="M134 108 L166 108 L196 206 L104 206Z" fill="#1d1a24"/>
+          <path d="M120 170 L180 170 L188 196 L112 196Z" fill="#f0c66e" opacity=".85"/>
+          <path d="M140 80 L96 96" stroke="#2b1a1a" stroke-width="6" stroke-linecap="round"/>
+          <path d="M160 80 L204 70" stroke="#2b1a1a" stroke-width="6" stroke-linecap="round"/>
+          <path d="M96 96 L66 76 A36 36 0 0 0 70 118Z" fill="#f0c66e"/>
+          <path d="M204 70 L236 52 A36 36 0 0 1 240 94Z" fill="#f0c66e"/>
+          <path d="M146 112 L154 112 L150 200Z" fill="#a5161c"/>
+        </svg>
+        <figcaption><b>Gandrung</b> · tarian ikon Banyuwangi dengan omprog emas dan kipas</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 300 220" role="img" aria-label="Ilustrasi Kawah Ijen dengan danau hijau toska">
+          <rect width="300" height="220" fill="#d9e8ee"/>
+          <path d="M0 120 L60 60 L110 80 L160 40 L220 75 L300 50 L300 220 L0 220Z" fill="#8b8696"/>
+          <path d="M0 150 L70 110 L150 130 L230 100 L300 125 L300 220 L0 220Z" fill="#6c6578"/>
+          <ellipse cx="150" cy="170" rx="110" ry="26" fill="#56cfc4"/>
+          <ellipse cx="150" cy="166" rx="80" ry="14" fill="#7fe0d6"/>
+          <path d="M40 160 C55 140 48 125 65 115 C68 130 80 140 72 160Z" fill="#f2e7a6" opacity=".9"/>
+          <path d="M60 150 C70 120 95 115 90 90" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+          <path d="M0 200 Q150 180 300 200 L300 220 L0 220Z" fill="#4c4462"/>
+        </svg>
+        <figcaption><b>Kawah Ijen</b> · danau asam toska dan belerang</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 300 220" role="img" aria-label="Ilustrasi motif batik Gajah Oling">
+          <defs><pattern id="gajah" width="60" height="55" patternUnits="userSpaceOnUse">
+            <rect width="60" height="55" fill="#f3ead6"/>
+            <path d="M10 45 C8 18 44 8 48 28 C51 42 30 46 30 34 C30 25 42 25 42 32" fill="none" stroke="#3a2416" stroke-width="3.2" stroke-linecap="round"/>
+            <circle cx="52" cy="10" r="3" fill="#a5161c"/>
+            <path d="M4 10 Q8 4 12 10 Q8 16 4 10Z" fill="#b9852a"/>
+          </pattern></defs>
+          <rect width="300" height="220" fill="url(#gajah)"/>
+        </svg>
+        <figcaption><b>Batik Gajah Oling</b> · motif khas Osing, lekuk belalai gajah dan uling</figcaption>
+      </figure>
+      <figure>
+        <svg viewBox="0 0 300 220" role="img" aria-label="Ilustrasi Pantai Pulau Merah saat senja">
+          <defs><linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6a35b"/><stop offset="1" stop-color="#f7d9a3"/></linearGradient></defs>
+          <rect width="300" height="220" fill="url(#dusk)"/>
+          <circle cx="210" cy="118" r="28" fill="#fff2cf"/>
+          <path d="M110 130 C120 80 180 78 200 130Z" fill="#b8402e"/>
+          <g fill="#2f5a3a"><circle cx="140" cy="90" r="10"/><circle cx="155" cy="84" r="11"/><circle cx="170" cy="92" r="9"/></g>
+          <rect y="128" width="300" height="50" fill="#3f8fb2"/>
+          <path d="M0 140 Q40 134 80 140 T160 140 T240 140 T320 140" stroke="#bfe3f1" stroke-width="2" fill="none"/>
+          <path d="M0 165 Q50 152 110 170 T300 160 L300 220 L0 220Z" fill="#f2d39b"/>
+        </svg>
+        <figcaption><b>Pulau Merah</b> · pantai senja di Pesanggaran</figcaption>
+      </figure>
+    </div>
+    <p class="note">Gambar di halaman ini adalah ilustrasi. Foto asli dokumentasi event akan dilampirkan dalam versi final.</p>
+  </div>
+</section>
+
+<section class="blk" id="cta">
+  <div class="num">18</div>
+  <div class="content">
+    <div class="eyebrow">Call to Action</div>
+    <div class="cta">
+      <h3>Mari berdiskusi sebelum 17 Oktober 2026</h3>
+      <p>Slot partner terbatas dan festival berlangsung tiga minggu lagi. Konfirmasi lebih awal memberi brand Anda posisi terbaik.</p>
+      <ol>
+        <li>Hubungi contact person di bawah untuk menjadwalkan presentasi atau kunjungan venue.</li>
+        <li>Pilih paket, atau ajukan bentuk kerja sama khusus sesuai kebutuhan brand.</li>
+        <li>Tanda tangani MoU dan kirim materi logo sesuai timeline.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="kontak">
+  <div class="num">19</div>
+  <div class="content">
+    <div class="eyebrow">Contact Person</div>
+    <div class="contact">
+      <div>
+        <div class="name">Aldi</div>
+        <div class="muted">Marketing · Pancoran Group</div>
+      </div>
+      <div class="c-row">
+        <span class="label">WhatsApp</span>
+        <a class="val" href="https://wa.me/6282141425588" target="_blank" rel="noopener">+62 821-4142-5588</a>
+        <button class="copy" type="button" data-copy="+6282141425588">Salin nomor</button>
+      </div>
+      <div class="c-row">
+        <span class="label">Email</span>
+        <span class="val">marketing@pancorangroup.com</span>
+        <button class="copy" type="button" data-copy="marketing@pancorangroup.com">Salin email</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="closing" id="closing">
+  <div class="wrap">
+    <div class="eyebrow">20 · Penutup</div>
+    <h2>Rasa, karya, dan budaya Banyuwangi butuh panggung dan mitra untuk tumbuh</h2>
+    <p>Kami percaya kehadiran brand Anda di UMKM Banyuwangi Festival akan dikenang masyarakat sebagai dukungan nyata, bukan sekadar logo di spanduk.</p>
+    <p>Terima kasih atas perhatian Bapak/Ibu. Sampai jumpa di Wisata Pancoran Waterpark, 30 Oktober – 1 November 2026.</p>
+    <p>Salam hangat,</p>
+    <div class="sign">Ashika Group × Pancoran Group</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Timeline persiapan: tanggal ISO, posisi dihitung dari skala 7 Okt – 8 Nov 2026
+  var rows=[
+    {n:'Pendekatan partner',s:'2026-10-07',e:'2026-10-17'},
+    {n:'Deadline konfirmasi & MoU',s:'2026-10-17',e:'2026-10-17',k:1},
+    {n:'Kirim materi logo',s:'2026-10-20',e:'2026-10-20'},
+    {n:'Produksi materi & branding',s:'2026-10-20',e:'2026-10-27'},
+    {n:'Technical meeting',s:'2026-10-27',e:'2026-10-27'},
+    {n:'Loading & set-up booth',s:'2026-10-28',e:'2026-10-29'},
+    {n:'Hari H festival',s:'2026-10-30',e:'2026-11-01',ev:1},
+    {n:'Laporan pasca-event',s:'2026-11-08',e:'2026-11-08'}
+  ];
+  var M=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
+  var d=function(x){return Date.parse(x)/864e5}, lo=d('2026-10-07'), hi=d('2026-11-08');
+  var pct=function(x){return ((d(x)-lo)/(hi-lo)*82)+'%'};
+  var lbl=function(x){return Number(x.slice(8))+' '+M[Number(x.slice(5,7))-1]};
+  var tl=document.getElementById('tl'), h='<div class="tl-axis"><div></div><div>';
+  ['2026-10-07','2026-10-14','2026-10-21','2026-10-28','2026-11-04'].forEach(function(w){h+='<span style="left:'+pct(w)+'">'+lbl(w)+'</span>'});
+  h+='</div></div>';
+  rows.forEach(function(r){
+    var one=r.s===r.e, cls='tl-row'+(r.k?' key':'')+(r.ev?' event':'');
+    var mark=one?'<span class="tl-dot" style="left:'+pct(r.s)+'"></span>'
+      :'<span class="tl-bar" style="left:'+pct(r.s)+';width:calc('+pct(r.e)+' - '+pct(r.s)+')"></span>';
+    var txt=one?lbl(r.s):lbl(r.s)+' – '+lbl(r.e);
+    h+='<div class="'+cls+'"><span>'+r.n.replace('&','&amp;')+'</span><div class="tl-track">'+mark+
+      '<span class="tl-date" style="left:calc('+pct(r.e)+' + 16px)">'+txt+'</span></div></div>';
+  });
+  tl.innerHTML=h;
+
+  document.querySelectorAll('button.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-copy'), orig=b.textContent;
+      var done=function(){b.textContent='Tersalin';setTimeout(function(){b.textContent=orig},1600)};
+      try{navigator.clipboard.writeText(t).then(done,function(){sel(b)});}catch(e){sel(b)}
+    });
+  });
+  function sel(b){var v=b.parentNode.querySelector('.val');var r=document.createRange();r.selectNodeContents(v);var s=getSelection();s.removeAllRanges();s.addRange(r);}
+})();
+</script>
+
+</body>
+</html>
